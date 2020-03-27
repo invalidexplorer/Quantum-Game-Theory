@@ -9,10 +9,10 @@ Here alice prepares two qubits, pass them through J gate and then sents one of t
 ## Sample test cases are as follows:
 
   U1  U2
-1.I   I -> result should be |00>
-2.I   X -> result should be |01>
-3.X   I -> result should be |10>
-4.X   X -> result should be |11>
+1. I   I -> result should be |00>
+2. I   X -> result should be |01>
+3. X   I -> result should be |10>
+4. X   X -> result should be |11>
 
 Requirements
 Be sure to have SimulaQron installed and running on your computer (see  guide).
