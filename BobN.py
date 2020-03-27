@@ -10,10 +10,10 @@ def main():
     # Initialize the connection
     with CQCConnection("Bob") as Bob:
 
-        # Make an EPR pair with Alice
+        # Get qubit from Alice
         qB = Bob.recvQubit()
         #DecisionMaking
-        #qB.Z()
+        qB.Z()
         Bob.sendQubit(qB, "Alice")
 
 def u3(q1, b, c, a):
