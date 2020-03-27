@@ -19,7 +19,7 @@ Be sure to have [SimulaQron](https://github.com/SoftwareQuTech/SimulaQron "Simul
 
 ### Usage
 
-1) The decisions are hard coded for testing, though they can be for sure be accepted on the go from the user.
+1) The decisions are hard coded for testing, though they can for sure be accepted on the go from the user.
 
 2) After changing the decisions, the simulaqron network must be reset, else it will show unpredictable results.
 
