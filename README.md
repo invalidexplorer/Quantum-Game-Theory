@@ -23,8 +23,9 @@ Be sure to have [SimulaQron](https://github.com/SoftwareQuTech/SimulaQron "Simul
 
 2) After changing the decisions, the simulaqron network must be reset, else it will show unpredictable results.
 
-It can be reset by the following command on the terminal 
-* simulaqron reset 
+It can be reset by the following command on the terminal.
+
+	simulaqron reset 
 
 3) Before starting simulaqron on the terminal, the backend must be changed to either projectq or qutip, as the default stabilizers do not have single qubit rotation gates.
 
