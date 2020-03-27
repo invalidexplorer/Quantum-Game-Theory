@@ -12,11 +12,11 @@ def main():
         # Create qubits
         q1 = qubit(Alice)
         q2 = qubit(Alice)
-        J(q1, q2)
-        q1.Z()
-        Alice.sendQubit(q2, "Bob")
-        q3 = Alice.recvQubit()
-        JD(q1,q3)
+        J(q1, q2) #passing them through J Gate
+        q1.Z() #sample decision
+        Alice.sendQubit(q2, "Bob") #sending Qubit to Bob after passing it through J gate
+        q3 = Alice.recvQubit() #recieve the manipulated qubit from Bob
+        JD(q1,q3) #passing it through reverse J gate
         # Measure the qubits
 
         a = q1.measure()
@@ -27,7 +27,7 @@ def main():
         print("|" + "-" * (len(to_print) + 2) + "|")
 
 
-def af(x):
+def af(x): #Aprroximate function for converting Rotation degrees into step size of 256
 
     if x>=2*pi:
         return af(x-(2*pi))
@@ -39,7 +39,7 @@ def af(x):
             return i
 
 
-def u3(q1,b,c,a):
+def u3(q1,b,c,a): #decision gate
     q1.rot_Z(af(a))
     q1.rot_Y(af(b))
     q1.rot_Z(af(c))
@@ -65,7 +65,7 @@ def J(q1, q2): # J gate
     cu3(q1, q2, 0, pi / 2, pi / 2)
     return q1, q2
 
-def JD(q1, q2):
+def JD(q1, q2): #reverse J gate
     cu3(q1 , q2, 0, pi * 3 / 2, pi * 3 / 2)
     cu3(q2 , q1, pi, 0, 0)
     q1.X()
