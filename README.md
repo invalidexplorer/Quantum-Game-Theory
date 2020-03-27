@@ -1,6 +1,6 @@
 ### QuantumGameTheory
 
-> Quantum game theory has been implemented via EWL Scheme using Quantum Networks in SimulaQron.
+Quantum game theory has been implemented via EWL Scheme using Quantum Networks in SimulaQron.
 
 ## Description
 
@@ -25,8 +25,9 @@ Be sure to have SimulaQron installed and running on your computer (see @SimulaQr
 3) Before starting simulaqron on the terminal, the backend must be changed to either projectq or qutip, as the default               stabilizers do not have single qubit rotation gates.
 
 It can be changed by the following command on terminal: 
->simulaqron set backend projectq
->Hence before executing and after changing the decisions, the following commands must be used.
->simulaqron reset
->simulaqron set backend projectq
->simulaqron start
+* simulaqron set backend projectq
+ Hence before executing and after changing the decisions, the following commands must be used.
+* simulaqron reset
+* simulaqron set backend projectq
+* simulaqron start
+* sh run.sh
