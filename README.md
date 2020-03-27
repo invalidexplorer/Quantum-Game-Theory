@@ -26,7 +26,7 @@ Be sure to have SimulaQron installed and running on your computer (see @SimulaQr
 
 It can be changed by the following command on terminal: 
 * simulaqron set backend projectq
- Hence before executing and after changing the decisions, the following commands must be used.
+ > Hence before executing and after changing the decisions, the following commands must be used.
 * simulaqron reset
 * simulaqron set backend projectq
 * simulaqron start
