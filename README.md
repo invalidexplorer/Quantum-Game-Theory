@@ -1,6 +1,8 @@
 # QuantumGameTheory
 
-Quantum game theory has been implemented via EWL Scheme using Quantum Networks in SimulaQron.
+Created a non-local Quantum game using Quantum Network simulator Simulaqron, with the base of QuTip as the quantum simulator via EWL Scheme.
+
+Quantum Game theory is based on original game theory, in which you can either deflect or cooperate, where the yield point is when one choose to deflect. However, in Quantum Game Theory, you have a continuous choice instead of binary choice, i.e you can 60% deflect and 40% cooperate, this idea extends with the use of complex number. Hence the yield point here becomes when both parties choose to 50% deflect and 50%i cooperate. 
 
 ### Description
 
