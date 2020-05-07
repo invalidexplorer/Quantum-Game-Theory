@@ -1,4 +1,4 @@
-# QuantumGameTheory
+# Quantum Prisoner's Dilemma 
 
 Created a non-local Quantum game using Quantum Network simulator Simulaqron, with the base of QuTip as the quantum simulator via EWL Scheme.
 
